@@ -13,7 +13,7 @@ CC = cc
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+	ar rcs $@ $<
 
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
